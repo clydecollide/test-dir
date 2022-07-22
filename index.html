@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script type="text/javascript" src="src/data/characters.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1 class="mainHeader">Bloodborne</h1>
-    <select name="NPC" id="npc-select">
-        <option value="test-01" class="">Test 1</option>
-        <option value="test-02" class="">Test 2</option>
-        <option value="test-03" class="">Test 3</option>
-    </select>
+    <div class="main__container">
+        <div class="logo__container">
+            <img class="logo" src="./src/img/logo.gif" />
+        </div>
+        <div>
+            <select class="npcSelect" name="NPC" id="npc-select" onchange="onChangeHandler(this)">
+                <option value="test-01" class="">Test 1</option>
+                <option value="test-02" class="">Test 2</option>
+                <option value="test-03" class="">Test 3</option>
+            </select>
+        </div>
+    </div>
 </body>
 
 </html>
